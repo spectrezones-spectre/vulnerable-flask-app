@@ -27,14 +27,6 @@ liés à l’injection SQL dans un environnement contrôlé.
 - [Sécurité](#sécurité)
 - [Limites connues](#limites-connues)
 - [Contribution](#contribution)
-- [Licence](#licence)
-- [Aide](#aide)
-
-> Le projet ne contient ni variable d’environnement, ni fichier `.env`, ni
-> procédure de production dédiée : il se lance uniquement en local avec Flask.
-> Aucune commande, variable ou service mentionné dans ce document n’a été
-> inventé ; chaque instruction correspond à ce que le dépôt applique
-> réellement.
 
 ## Présentation
 
@@ -329,16 +321,4 @@ Ce dépôt est un support d’apprentissage. Toute contribution utile à la
 documentation, aux tests ou à l’explication des scénarios est bienvenue.
 Merci de vérifier que les modifications conservent la distinction
 « vulnérable / sécurisée » et que `py -m pytest -q` réussit avant de proposer
-une modification. La licence et le processus de revue exacts restent à
-préciser par le mainteneur.
-
-## Licence
-
-Non renseignée pour le moment. Cette section doit être confirmée par le
-mainteneur avant toute publication publique.
-
-## Aide
-
-Pour une question, un problème ou une suggestion concernant ce dépôt, ouvrez
-un ticket sur l’hébergement du code où réside le projet, ou contactez le
-mainteneur directement. La procédure de contact exacte reste à préciser.
+une modification.
