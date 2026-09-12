@@ -1,0 +1,32 @@
+{% extends 'base.html' %}{% block title %}Connexion{% endblock %}{% block
+content %}
+<div class="card">
+  <h1>
+    Connexion {% if safe %}<span class="tag">sécurisée</span>{% else %}<span
+      class="tag"
+      >vulnérable</span
+    >{% endif %}
+  </h1>
+  <p>
+    Point d’entrée : <code>{{endpoint}}</code>. Comparez une saisie normale, une
+    saisie malformée et une saisie manipulée pour observer le comportement de
+    chacun des deux traitements.
+  </p>
+  {% if error %}
+  <div class="alert">{{error}}</div>
+  {% endif %}
+  <form method="post">
+    <label>Nom utilisateur</label
+    ><input name="username" autocomplete="off" /><label>Mot de passe</label
+    ><input type="password" name="password" /><button>Se connecter</button>
+  </form>
+  <p class="muted">
+    Comptes normaux : alice/alice123, analyst/observe123, admin/admin123.
+  </p>
+  {% if not safe %}
+  <p>
+    <a href="{{url_for('login_safe')}}">Comparer avec la version paramétrée</a>
+  </p>
+  {% endif %}
+</div>
+{% endblock %}
