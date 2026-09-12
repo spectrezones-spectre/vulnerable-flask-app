@@ -25,7 +25,6 @@ liés à l’injection SQL dans un environnement contrôlé.
 - [Parcours de test de bout en bout](#parcours-de-test-de-bout-en-bout)
 - [Tests automatisés](#tests-automatisés)
 - [Sécurité](#sécurité)
-- [Limites connues](#limites-connues)
 - [Contribution](#contribution)
 
 ## Présentation
@@ -305,15 +304,6 @@ configurée dans ce dépôt.
 - Ces expériences sont autorisées uniquement sur cette instance locale ; ne
   réutilisez aucune charge, aucun secret et aucune concaténation SQL dans une
   application réelle.
-
-## Limites connues
-
-- Authentification et autorisation volontairement inadéquates ; l’application
-  n’est pas un modèle de gestion de secrets ou de sessions.
-- Mots de passe stockés en clair dans la base (simplification pédagogique).
-- Aucun mécanisme de protection de session autre que la clé Flask en dur.
-- Les erreurs SQL brutes sont affichées sur les routes vulnérables pour
-  illustrer le comportement réel d’une requête mal construite.
 
 ## Contribution
 
